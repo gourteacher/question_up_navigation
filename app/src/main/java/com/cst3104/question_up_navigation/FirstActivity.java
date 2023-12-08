@@ -34,7 +34,7 @@ public class FirstActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
-        if ( id == R.id.move_to_activity_2) {
+        if ( id == R.id.move_to_next) {
             Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
             startActivity(intent);
         }

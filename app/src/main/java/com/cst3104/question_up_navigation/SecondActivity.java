@@ -1,6 +1,8 @@
 package com.cst3104.question_up_navigation;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +25,13 @@ public class SecondActivity extends AppCompatActivity {
         if (myBar != null) {
             myBar.setDisplayHomeAsUpEnabled(true);
         }
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
     }
 }
